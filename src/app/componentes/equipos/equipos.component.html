@@ -1,1 +1,20 @@
-<p>equipos works!</p>
+<table class="table">
+  <thead>
+  <tr>
+    <th scope="col">Serial</th>
+    <th scope="col">Nombre</th>
+    <th scope="col">Descripcion</th>
+    <th scope="col">Opciones</th>
+  </tr>
+  </thead>
+  <tbody>
+
+    <tr *ngFor="let dato of equipos">
+      <td style="min-width:100px">{{dato.serial}}</td>
+      <td style="min-width:200px">{{dato.nombre}}</td>
+      <td style="min-width:100px">{{dato.descripcion}}</td>
+    </tr>
+
+  </tbody>
+
+</table>

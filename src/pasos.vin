@@ -37,7 +37,41 @@ B. CREAR EL PROYECTO Y EJECUTAR
 
    Verifique en un navegador.
 
+C. ADICIONAR BOOTSTRAP
+
+a. Ejecute el comando
+   $>  npm install bootstrap bootstrap-icons
+
+b. Busque el archivo angular.json y en el apartado
+  "styles": [
+    "node_modules/bootstrap/scss/bootstrap.css",
+    "node_modules/bootstrap-icons/font/bootstrap-icons.css",
+    "src/styles.scss"
+  ],
+
+  "scripts": [
+    "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+  ]
+
+c. Ahora instalar los componentes popper y jquery con el comando
+   $> npm install jquery@3.3.1 popper.js@1.14.3 --save
+
+
+  En la seccion  scripts adicione
+ "scripts": [
+     "node_modules/jquery/dist/jquery.js",
+     "node_modules/popper.js/dist/umd/popper.js",
+
+     "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+   ]
+
+
+d. Instale los componentes bootstrap
+   $> npm install ng-bootstrap
+
+
    EL AUTOR: Vinni . 2024
+
 
 
 

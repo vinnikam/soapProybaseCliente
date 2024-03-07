@@ -9,6 +9,7 @@ import {HttpClientModule} from "@angular/common/http";
 import {EquiposService} from "./servicios/equipos.service";
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,6 +20,7 @@ import {EquiposService} from "./servicios/equipos.service";
         RouterModule,
         AppRoutingModule,
         HttpClientModule
+
     ],
   providers: [EquiposService],
   bootstrap: [AppComponent]
